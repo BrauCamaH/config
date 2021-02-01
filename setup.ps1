@@ -1,7 +1,29 @@
 ### install chocolatey ###
-iex ((new-object net.webclient).DownloadString("http://chocolatey.org/install.ps1"))
+echo 'Installing chocolatey'
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-## isntall dev programs ###
+## install choco packages ###
+echo 'Installing programs'
 choco install git
 choco install nvm
+choco install python
 choco install vscode
+choco install googlechrome
+choco install epicgameslauncher
+choco install unity-hub
+choco install firefox
+choco install docker-desktop
+choco install microsoft-windows-terminal
+choco install adobereader
+choco install starship
+choco install firacode
+
+# Configure Optional Windows Features
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform               # Enable Windows VM Platform          
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux    # Enable WSL
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All               # Enable Hyper-V
+Disable-WindowsOptionalFeature -FeatureName Internet-Explorer-Optional-amd64 –Online    # Disable IE11
+
+Restart-Computer
+
+
