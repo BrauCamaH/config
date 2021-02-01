@@ -11,7 +11,7 @@
 Clone this repository in your the user directory
 
 ```bash
-git clone https://github.com/BrauCamaH/config.git ./dotfiles && source bootstrap.sh
+git clone https://github.com/BrauCamaH/config.git ./.dotfiles && source bootstrap.sh
 ```
 
 ## Chocolatey
