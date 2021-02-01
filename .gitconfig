@@ -1,0 +1,23 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Braulio Camarena
+	email = braulio.camarenah@gmail.com
+[merga]
+	conflictstyle = diff3
+[core]
+	editor = \"C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+	autocrlf = true
+[credential]
+	helper = wincred
+[winUpdater]
+	recentlySeenVersion = 2.25.0.windows.1
+[auto]
+	crlf = false
+[http]
+	postBuffer = 524288000
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
