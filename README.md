@@ -8,7 +8,7 @@
 
 ## Installation
 
-Clone this repository in your user directory
+Clone this repository in your the user directory
 
 ```bash
 git clone https://github.com/BrauCamaH/config.git ./dotfiles && source bootstrap.sh
@@ -20,7 +20,7 @@ Execute the setup.ps1 with administration rights
 
 ## WSL
 
-Execute the setup.ps1 with administration rights
+Execute the setup-wsl.ps1 with administration rights
 
 Be sure to enable the wsl feature
 
