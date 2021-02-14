@@ -5,18 +5,19 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 ## install choco packages ###
 echo 'Installing programs'
 choco install git
+choco install starship
+choco install firacode
 choco install nvm
 choco install python
 choco install vscode
+choco install firefox
 choco install googlechrome
 choco install epicgameslauncher
 choco install unity-hub
-choco install firefox
 choco install docker-desktop
 choco install microsoft-windows-terminal
 choco install adobereader
-choco install starship
-choco install firacode
+choco install powertoys
 
 # Configure Optional Windows Features
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform               # Enable Windows VM Platform          
@@ -25,5 +26,3 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All       
 Disable-WindowsOptionalFeature -FeatureName Internet-Explorer-Optional-amd64 –Online    # Disable IE11
 
 Restart-Computer
-
-
